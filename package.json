@@ -1,0 +1,13 @@
+{
+  "name": "nakurai-portfolio",
+  "version": "1.0.0",
+  "description": "my little corner of the internet",
+  "main": "app.js",
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "deploy:prod":"firebase use prod && firebase deploy --only hosting"
+  },
+  "author": "",
+  "license": "ISC"
+}
