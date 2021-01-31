@@ -45,13 +45,13 @@ const template = `
         <a title="External blog page" class="nc-header-item" href="https://blog.nakuraicodes.com" target="__blank">Blog <nc-icon size="small" icon="open_in_new"></nc-icon></a>
     </span>
     <select class="nc-header-dropdown">
-        <option data-page-id="${ROUTE_ID.ABOUT.routeId}">
+        <option data-page-id="${ROUTE_ID.ABOUT.routeId}" value="${ROUTE_ID.ABOUT.routeId}">
             <a title="Page about me" class="nc-header-item" href="#${ROUTE_ID.ABOUT.routeId}">About</a>
         </option>
-        <option data-page-id="${ROUTE_ID.PROJECTS.routeId}">
+        <option data-page-id="${ROUTE_ID.PROJECTS.routeId}" value="${ROUTE_ID.PROJECTS.routeId}">
             <a title="Page about my projects" class="nc-header-item" href="#${ROUTE_ID.PROJECTS.routeId}">Side Projects</a>
         </option>
-        <option data-page-id="${ROUTE_ID.RESUME.routeId}">
+        <option data-page-id="${ROUTE_ID.RESUME.routeId}" value="${ROUTE_ID.RESUME.routeId}">
             <a title="Page about my projects" class="nc-header-item" href="#${ROUTE_ID.RESUME.routeId}">Resume</a>
         </option>
         <option>
@@ -73,11 +73,8 @@ class Header extends HTMLElement {
   connectedCallback() {
     this.shadowRoot
       .querySelector(".nc-header-dropdown")
-      .addEventListener("click", (event) => {
-        const tartgetType = event.target.nodeName.toLowerCase();
-        if (tartgetType === "option") {
-          window.location.hash = event.target.dataset.pageId;
-        }
+      .addEventListener("change", (event) => {
+        window.location.hash = event.target.value;
       });
   }
 }
