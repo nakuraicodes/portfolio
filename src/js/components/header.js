@@ -54,7 +54,7 @@ const template = `
         <option data-page-id="${ROUTE_ID.RESUME.routeId}" value="${ROUTE_ID.RESUME.routeId}">
             <a title="Page about my projects" class="nc-header-item" href="#${ROUTE_ID.RESUME.routeId}">Resume</a>
         </option>
-        <option>
+        <option value="https://blog.nakuraicodes.com">
             <a title=External blog page" class="nc-header-item" href="https://blog.nakuraicodes.com" target="__blank">Blog</a>
         </option>
     </select>
@@ -74,7 +74,11 @@ class Header extends HTMLElement {
     this.shadowRoot
       .querySelector(".nc-header-dropdown")
       .addEventListener("change", (event) => {
-        window.location.hash = event.target.value;
+        if (event.target.value.includes("https")) {
+          window.location = event.target.value;
+        } else {
+          window.location.hash = event.target.value;
+        }
       });
   }
 }
