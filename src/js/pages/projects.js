@@ -52,6 +52,16 @@ const template = `
       </p>
     </article>
     <article>
+      <h4>Easy Timetable</h4>
+      <p>
+        This is supposed to be an easier way to shcedule your days. Just drag and drop your cursor on the timetable to create your schedule, then
+        see the number of hours your worked on. <br/>
+        The website does not collect any personal information.<br/>
+        You can find the website here: 
+        <a href="https://ez-timetable.web.app/" title="outside link to the Easy Timetable website" target="__blank">Easy Tiemtable&nbsp;<nc-icon size="small" icon="open_in_new"></nc-icon></a>
+      </p>
+    </article>
+    <article>
       <h4>Sharing Fairy</h4>
       <p>
         This is my first attempt at creating a decentralized application. The idea is that people can create groups on their devices,
@@ -59,7 +69,7 @@ const template = `
         with several people without relying on the need of everybody having to use the same tool. <br/>
         The website does not collect any personal information. All the files shared are discarded as soon as the page is closed. <br/>
         You can find the website here: 
-        <a href="https://sharing-fairy.wb.app" title="outside link to the Sharing Fairy website" target="__blank">Sharing Fairy&nbsp;<nc-icon size="small" icon="open_in_new"></nc-icon></a> <br/>
+        <a href="https://sharing-fairy.web.app" title="outside link to the Sharing Fairy website" target="__blank">Sharing Fairy&nbsp;<nc-icon size="small" icon="open_in_new"></nc-icon></a> <br/>
         The code is publicly available.
       </p>
     </article>
