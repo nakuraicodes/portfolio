@@ -54,11 +54,11 @@ const template = `
     <article>
       <h4>Easy Timetable</h4>
       <p>
-        This is supposed to be an easier way to shcedule your days. Just drag and drop your cursor on the timetable to create your schedule, then
-        see the number of hours your worked on. <br/>
+        This is supposed to be an easier way to organize your days. Just drag and drop your cursor on the timetable to create your schedule, then
+        see the number of hours your worked on each of your projects. The website uses Firebase authentication, Nodejs/Express and MongoDB.<br/>
         The website does not collect any personal information.<br/>
         You can find the website here: 
-        <a href="https://ez-timetable.web.app/" title="outside link to the Easy Timetable website" target="__blank">Easy Tiemtable&nbsp;<nc-icon size="small" icon="open_in_new"></nc-icon></a>
+        <a href="https://ez-timetable.web.app/" title="outside link to the Easy Timetable website" target="__blank">Easy Timetable&nbsp;<nc-icon size="small" icon="open_in_new"></nc-icon></a>
       </p>
     </article>
     <article>
