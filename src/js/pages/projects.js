@@ -99,15 +99,16 @@ const template = `
     <article>
       <h4>Cellular Automaton</h4>
       <p>
-        I have played around with Web Components and created a visualization of the 
-        <a href="https://en.wikipedia.org/wiki/Conway%27s_Game_of_Life" target="__blank" title="Wikipedia article regarding Conway's Game of Life">Conway's Game of Life <nc-icon size="small" icon="open_in_new"></nc-icon></a>.
+        I have played around with Web Components and created a visualization of the Conway's Game of Life (
+        <a href="https://en.wikipedia.org/wiki/Conway%27s_Game_of_Life" target="__blank" title="Wikipedia article regarding Conway's Game of Life">
+         Wikipedia<nc-icon size="small" icon="open_in_new"></nc-icon></a>).
         It's actually on this website. <a href="#game-of-life" title="go to Conway's game of life's visualization"> You can check it out here </a>.
       </p>
     </article>
     <article>
       <h4>My Blog</h4>
       <p>
-       Maybe you already visited it by clicking on the menu item. It's where I share what I have learned while coding my project. It's almost 
+       Maybe you already visited it by clicking on the menu item. It's where I share what I have learned while coding my projects. It's almost 
        only about technical topics. I want it to be as useful and straightforward as possible.
       </p>
     </article>
