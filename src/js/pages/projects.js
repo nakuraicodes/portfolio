@@ -80,6 +80,8 @@ const template = `
         timedraw. It pulls your Google Calendar events and present them around an analogic clock. I like having my whole display in an easy-to-read
         fashion. <br/>
         It has a <b>very</b> minimalistic design to let the user focus on the clock without distraction. <br/>
+        Google needs to approve the API use and is not making it easy at all, so I think you can still login but you may get a warning from 
+        Google if you choose to do so. <br/>
         The website is available here: <a href="https://clocky.ca" title="outside link to visit Clocky" target="__blank">Clocky <nc-icon size="small" icon="open_in_new"></nc-icon></a>.
       </p>
     </article>
