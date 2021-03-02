@@ -13,10 +13,10 @@ a:visited {
 const template = `
   <style>${style}</style>
   <div class="container">
-    <h3>Hi there, welcome to my small corner of the web.</h3>
+    <h3>Hi there! Welcome to my small corner of the web.</h3>
     <p>
         Please <a href="mailto:contact@nakuraicodes.com" title="help, I am stuck on my project!">contact me</a> if you are technically stuck in your project. 
-        I like hearing about other people's plans and inpiration. I thrive to find
+        I like hearing about other people's plans and inpiration. I will do my best to find
         the right advice for you. If you need a developer, I will tell you who to look for and what to ask of them. Similarly, not all projects
         require coding. Maybe a Squarespace, Wordpress or Shopify account will do the trick and save you thousands of dollars.
     </p>
@@ -26,7 +26,7 @@ const template = `
     <p>
         I have been working in the startup world for five years now. I have worked in the 
         legal field, the family mediation field and the medical field. I enjoy starting from scratch, and bringing a project to life. I will make it real,
-        ready to be used as needed. Then chances are that you will need another type of profiles to work for you.
+        ready to be used as needed.
     </p>
     </p>
   </div>
