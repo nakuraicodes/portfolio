@@ -2,6 +2,8 @@ import { info as aboutInfo } from "./pages/about.js";
 import { info as projectInfo } from "./pages/projects.js";
 import { info as resumeInfo } from "./pages/resume.js";
 import { info as gameOfLifeInfo } from "./pages/game-of-life.js";
+import { info as neuralNetworkInfo } from "./pages/neural-network.js";
+import { info as calculusInfo } from "./pages/calculus.js";
 
 const style = `
 `;
@@ -15,6 +17,8 @@ export const ROUTE_ID = {
   PROJECTS: projectInfo,
   RESUME: resumeInfo,
   GAME_OF_LIFE: gameOfLifeInfo,
+  NEURAL_NETWORK: neuralNetworkInfo,
+  CALCULUS: calculusInfo,
 };
 
 const DEFAULT_ROUTE_ID = ROUTE_ID.ABOUT.routeId;
