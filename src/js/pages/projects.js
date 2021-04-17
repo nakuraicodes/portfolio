@@ -106,6 +106,13 @@ const template = `
       </p>
     </article>
     <article>
+      <h4>Some algebra</h4>
+      <p>
+        I have played around with a naive implementation of matrices. Here is a small tool to practice "multiplying" them:
+        <a href="#calculus" title="practice matrices dot product"> Practice matrice dot product</a>.
+      </p>
+    </article>
+    <article>
       <h4>My Blog</h4>
       <p>
        Maybe you already visited it by clicking on the menu item. It's where I share what I have learned while coding my projects. It's almost 

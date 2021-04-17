@@ -71,3 +71,10 @@ export function mul(m1, m2) {
 
   return new Matrix(m1.row, m2.col, cells);
 }
+
+export function normalize(vector) {
+  const magnitude = vector.magnitude;
+  const normalizedVector = new Matrix(vector.row, vector.col, vector.cells);
+  normalizedVector.div(magnitude);
+  return normalizedVector;
+}
