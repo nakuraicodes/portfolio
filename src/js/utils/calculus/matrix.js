@@ -22,6 +22,46 @@ export default class Matrix {
     return this._cells;
   }
 
+  // for vectors, get the 1,1 cell
+  get x() {
+    return this._cells["0"] || 0;
+  }
+  // for vectors, get the 1,2 cell
+  get y() {
+    return this._cells["1"] || 0;
+  }
+  // for vectors, get the 1,2 cell
+  get z() {
+    return this._cells["2"] || 0;
+  }
+  // for vectors, set the 1,1 cell
+  set x(value) {
+    this._cells["0"] = value;
+  }
+  // for vectors, set the 1,2 cell
+  set y(value) {
+    this._cells["1"] = value;
+  }
+  // for vectors, set the 1,2 cell
+  set z(value) {
+    this._cells["2"] = value;
+  }
+
+  get magnitude() {
+    if (this._row === 1) {
+      const squaredSum = this.get(1, null).reduce(
+        (acc, currentValue) => acc + currentValue * currentValue,
+        0
+      );
+      return Math.sqrt(squaredSum);
+    } else {
+      throw new Error(
+        "impossible to calculate the magnitude for number of row = ",
+        this._row
+      );
+    }
+  }
+
   showDimensions() {
     return `(${this._row},${this._col})`;
   }
@@ -37,6 +77,15 @@ export default class Matrix {
     }
     res += "]";
     console.log(res);
+  }
+
+  set(row, col, value) {
+    try {
+      const indexCell = (row - 1) * this._col + (col - 1);
+      this._cells[indexCell] = value;
+    } catch (error) {
+      console.log("ERROR ", error.message);
+    }
   }
 
   get(row, col) {
@@ -82,5 +131,22 @@ export default class Matrix {
       colValues.push(this._cells[cellIndex] || 0);
     }
     return colValues;
+  }
+
+  div(number) {
+    var cellIndexes = Object.keys(this._cells);
+    for (var i = 0; i < cellIndexes.length; i++) {
+      const cellIndex = cellIndexes[i];
+      this._cells[cellIndex] = this._cells[cellIndex] / number;
+    }
+  }
+
+  // TODO: test for mul
+  mul(number) {
+    var cellIndexes = Object.keys(this._cells);
+    for (var i = 0; i < cellIndexes.length; i++) {
+      const cellIndex = cellIndexes[i];
+      this._cells[cellIndex] = this._cells[cellIndex] * number;
+    }
   }
 }
