@@ -1,4 +1,5 @@
 import calc from "./index.js";
+import Matrix from "./matrix.js";
 
 let testResult = { failed: 0, taken: 0 };
 let testError = "";
@@ -89,6 +90,32 @@ try {
       fail("all cells should be equal to 0.2, got " + cellValue);
       break;
     }
+  }
+  // magnitude
+  testResult.taken++;
+  m = new Matrix(1, 2, { 0: 3, 1: 4 });
+  if (m.magnitude !== 5) {
+    fail("magintude should be 5 instead of ", m.magnitude);
+  }
+  // division
+  testResult.taken++;
+  m = new Matrix(1, 2, { 0: 6, 1: 4 });
+  m.div(2);
+  if (m.get(1, 1) !== 3) {
+    fail(
+      "division failed, should be " + { 0: 3, 1: 2 } + " instead of ",
+      m.cells
+    );
+  }
+  // normalization
+  testResult.taken++;
+  m = new Matrix(1, 2, { 0: 3, 1: 4 });
+  let normalizedVector = calc.normalize(m);
+  if (normalizedVector.get(1, 1) !== 3 / 5) {
+    fail(
+      "normalized vector should be " + { 0: 3 / 5, 1: 4 / 5 } + " instead of ",
+      normalizedVector.cells
+    );
   }
   // matrices operations
 
