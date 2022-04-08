@@ -52,16 +52,6 @@ const template = `
       </p>
     </article>
     <article>
-      <h4>Easy Timetable</h4>
-      <p>
-        This is supposed to be an easier way to organize your days. Just drag and drop your cursor on the timetable to create your schedule, then
-        see the number of hours your worked on each of your projects. The website uses Firebase authentication, Nodejs/Express and MongoDB.<br/>
-        The website does not collect any personal information.<br/>
-        You can find the website here: 
-        <a href="https://ez-timetable.web.app/" title="outside link to the Easy Timetable website" target="__blank">Easy Timetable&nbsp;<nc-icon size="small" icon="open_in_new"></nc-icon></a>
-      </p>
-    </article>
-    <article>
       <h4>Sharing Fairy</h4>
       <p>
         This is my first attempt at creating a decentralized application. The idea is that people can create groups on their devices,
@@ -71,18 +61,6 @@ const template = `
         You can find the website here: 
         <a href="https://sharing-fairy.web.app" title="outside link to the Sharing Fairy website" target="__blank">Sharing Fairy&nbsp;<nc-icon size="small" icon="open_in_new"></nc-icon></a> <br/>
         The code is publicly available.
-      </p>
-    </article>
-    <article>
-      <h4>Clocky</h4>
-      <p>
-        Clocky was an experiment related to our relationship to schedules. It's based on a Medium article written by the user vineetkl and called
-        timedraw. It pulls your Google Calendar events and present them around an analogic clock. I like having my whole day display in an easy-to-read
-        fashion. <br/>
-        It has a <b>very</b> minimalistic design to let the user focus on the clock without distraction. <br/><br/>
-        Warning: Google needs to approve the API use and is not making it easy at all, so I think you can still login but you may get a warning from 
-        Google if you choose to do so. <br/>
-        The website is available here: <a href="https://clocky.ca" title="outside link to visit Clocky" target="__blank">Clocky <nc-icon size="small" icon="open_in_new"></nc-icon></a>.
       </p>
     </article>
     <article>
