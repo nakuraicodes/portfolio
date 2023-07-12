@@ -1,5 +1,5 @@
-import "../components/icon.js";
-import "../components/button-to-top.js";
+import '../components/icon.js';
+import '../components/button-to-top.js';
 
 const style = `
 a {
@@ -42,12 +42,21 @@ const template = `
   <div class="container">
     <h3>Here is what I have been working on</h3>
     <article>
+      <h4>Gentle Finance</h4>
+      <p>
+        I have never found the existing personal finance applications satifying. I think they all are quite complex and hard to wrap your head around, or miss some basic feature. I decided to create my own, and it's open to new users! With 
+        it you can track your expenses easily just by using sms.<br/>
+        You can request access to the beta version here: <a href="https://gentlefi.com/" title="outside link to the gentle finance landing page"
+        target="__blank">Gentle Finance <nc-icon size="small" icon="open_in_new"></nc-icon></a> <br/>
+      </p>
+    </article>
+    <article>
       <h4>I am a Mentor!</h4>
       <p>
         I strongly believe that coding can be an extraordinary experience. It brings understanding to the world we live in, the potential to
         express yourself, the ability to connect without borders or langage. It's a true component of freedom and independance. I am 
         glad to bring my expertise and help people improve in this area.<br/>
-        You can hire me on this page: <a href="https://mentorcruise.com/mentor/ChristopheMamessier/" title="ourside link to my mentorin page"
+        You can hire me on this page: <a href="https://mentorcruise.com/mentor/ChristopheMamessier/" title="outside link to my mentorin page"
         target="__blank">Christophe Mamessier on MentorCruise <nc-icon size="small" icon="open_in_new"></nc-icon></a> <br/>
       </p>
     </article>
@@ -105,12 +114,12 @@ const template = `
 class Projects extends HTMLElement {
   constructor() {
     super();
-    this.attachShadow({ mode: "open" });
-    const componentTemplate = document.createElement("template");
+    this.attachShadow({ mode: 'open' });
+    const componentTemplate = document.createElement('template');
     componentTemplate.innerHTML = template;
     this.shadowRoot.appendChild(componentTemplate.content.cloneNode(true));
   }
 }
 
-customElements.define("nc-page-projects", Projects);
-export const info = { routeId: "projects" };
+customElements.define('nc-page-projects', Projects);
+export const info = { routeId: 'projects' };
