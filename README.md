@@ -9,4 +9,4 @@ I am pretty happy with this bit. Checkout the file `src/js/router.js`. I have a 
 
 ### deploy note
 
-This website is hosted on Firebase, so the delpoy script in the `package.json` file is only working if you have a firebase setup on your computer. Also, I have not submitted some files used for my resume etc.
+This website is hosted on Firebase, so the deploy script in the `package.json` file is only working if you have a firebase setup on your computer. Also, I have not submitted some files used for my resume etc.

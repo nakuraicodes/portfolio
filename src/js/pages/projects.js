@@ -1,5 +1,5 @@
-import "../components/icon.js";
-import "../components/button-to-top.js";
+import '../components/icon.js';
+import '../components/button-to-top.js';
 
 const style = `
 a {
@@ -42,23 +42,22 @@ const template = `
   <div class="container">
     <h3>Here is what I have been working on</h3>
     <article>
+      <h4>Gentle Finance</h4>
+      <p>
+        I have never found the existing personal finance applications satifying. I think they all are quite complex and hard to wrap your head around, or miss some basic feature. I decided to create my own, and it's open to new users! With 
+        it you can track your expenses easily just by using sms.<br/>
+        You can request access to the beta version here: <a href="https://gentlefi.com/" title="outside link to the gentle finance landing page"
+        target="__blank">Gentle Finance <nc-icon size="small" icon="open_in_new"></nc-icon></a> <br/>
+      </p>
+    </article>
+    <article>
       <h4>I am a Mentor!</h4>
       <p>
         I strongly believe that coding can be an extraordinary experience. It brings understanding to the world we live in, the potential to
         express yourself, the ability to connect without borders or langage. It's a true component of freedom and independance. I am 
         glad to bring my expertise and help people improve in this area.<br/>
-        You can hire me on this page: <a href="https://mentorcruise.com/mentor/ChristopheMamessier/" title="ourside link to my mentorin page"
+        You can hire me on this page: <a href="https://mentorcruise.com/mentor/ChristopheMamessier/" title="outside link to my mentorin page"
         target="__blank">Christophe Mamessier on MentorCruise <nc-icon size="small" icon="open_in_new"></nc-icon></a> <br/>
-      </p>
-    </article>
-    <article>
-      <h4>Easy Timetable</h4>
-      <p>
-        This is supposed to be an easier way to organize your days. Just drag and drop your cursor on the timetable to create your schedule, then
-        see the number of hours your worked on each of your projects. The website uses Firebase authentication, Nodejs/Express and MongoDB.<br/>
-        The website does not collect any personal information.<br/>
-        You can find the website here: 
-        <a href="https://ez-timetable.web.app/" title="outside link to the Easy Timetable website" target="__blank">Easy Timetable&nbsp;<nc-icon size="small" icon="open_in_new"></nc-icon></a>
       </p>
     </article>
     <article>
@@ -71,18 +70,6 @@ const template = `
         You can find the website here: 
         <a href="https://sharing-fairy.web.app" title="outside link to the Sharing Fairy website" target="__blank">Sharing Fairy&nbsp;<nc-icon size="small" icon="open_in_new"></nc-icon></a> <br/>
         The code is publicly available.
-      </p>
-    </article>
-    <article>
-      <h4>Clocky</h4>
-      <p>
-        Clocky was an experiment related to our relationship to schedules. It's based on a Medium article written by the user vineetkl and called
-        timedraw. It pulls your Google Calendar events and present them around an analogic clock. I like having my whole day display in an easy-to-read
-        fashion. <br/>
-        It has a <b>very</b> minimalistic design to let the user focus on the clock without distraction. <br/><br/>
-        Warning: Google needs to approve the API use and is not making it easy at all, so I think you can still login but you may get a warning from 
-        Google if you choose to do so. <br/>
-        The website is available here: <a href="https://clocky.ca" title="outside link to visit Clocky" target="__blank">Clocky <nc-icon size="small" icon="open_in_new"></nc-icon></a>.
       </p>
     </article>
     <article>
@@ -127,12 +114,12 @@ const template = `
 class Projects extends HTMLElement {
   constructor() {
     super();
-    this.attachShadow({ mode: "open" });
-    const componentTemplate = document.createElement("template");
+    this.attachShadow({ mode: 'open' });
+    const componentTemplate = document.createElement('template');
     componentTemplate.innerHTML = template;
     this.shadowRoot.appendChild(componentTemplate.content.cloneNode(true));
   }
 }
 
-customElements.define("nc-page-projects", Projects);
-export const info = { routeId: "projects" };
+customElements.define('nc-page-projects', Projects);
+export const info = { routeId: 'projects' };

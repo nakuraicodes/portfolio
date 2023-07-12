@@ -1,5 +1,5 @@
-src/res/
 .firebase/
 .firebaserc
 firebase.json
 package-lock.json
+src/res/video
