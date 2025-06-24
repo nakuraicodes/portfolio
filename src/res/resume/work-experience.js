@@ -1,6 +1,22 @@
 export default [
   {
-    date: 'Mar&nbsp;2021 - Apr&nbsp;',
+    date: 'Mar&nbsp;2024 - May&nbsp;2025',
+    title: 'Senior Software Engineer at Ezee Assist',
+    description: `Ezee Assist’s creates an all-in-one AI support assistant for franchisors.<br/>
+    <ul>
+    <li>Technical lead on the creation of the new company’s product with thousands of users.</li>
+    <li>The product includes web interfaces, chat integrations and complex, fault tolerant, data</li>
+    <li>Supervised two contractors and two juniors/interns, bringing them from 0 to 1 on our system workflows distributed across multiple services in a micro service architecture. via peer programming sessions and detailed code reviews.</li>
+    <li>Enforced best practices to improve stability and traceability of distributed systems.</li>
+    </ul>`,
+  },
+  {
+    date: 'Sep&nbsp;2023 - Nov&nbsp;2023',
+    title: 'Entrepreneur in Residence at Antler',
+    description: `Trying the VC adventure! Lead 40+ customer discovery interviews and Coded two prototypes to support our investor pitch.`,
+  },
+  {
+    date: 'Mar&nbsp;2021 - Mar&nbsp;2023',
     title: 'Full-Stack Developer at Ensho Health Inc.',
     description: `Ensho's goal is to be the first and most effective digital lab. I am in charge of the user's interfaces with the different part of Ensho's systems. I am working with
         ReactJS, Python (flask, FastAPI), GraphQL and Postgresql.`,

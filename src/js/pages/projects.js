@@ -40,7 +40,26 @@ iframe{
 const template = `
   <style>${style}</style>
   <div class="container">
-    <h3>Here is what I have been working on</h3>
+    <h3>Here is what I have been working on my own time</h3>
+    <article>
+      <h4>A chess game</h4>
+      <p>
+        I have always wanted to make my own chess logic. I had tried in the past, trying to build optimized version first. This time I focused on the "Make it work, make it good, make it fast" rule.
+        Well, I made it work!
+        <br/>
+        You can see the code here: <a href="https://github.com/Nakurai/go-chess-game" title="outside link to the github page of nakurai"
+        target="__blank">Chess Game on Github <nc-icon size="small" icon="open_in_new"></nc-icon></a> <br/>
+      </p>
+    </article>
+    <article>
+      <h4>Forget Me Not</h4>
+      <p>
+        This is a micro journalling web application you can use today! It's quite minimalist, and we welcome any feedback!
+        <br/>
+        You can see the code here: <a href="https://forgetmenot.so" title="outside link to the Forget Me Not website"
+        target="__blank">Forget Me Not <nc-icon size="small" icon="open_in_new"></nc-icon></a> <br/>
+      </p>
+    </article>
     <article>
       <h4>Gentle Finance</h4>
       <p>
